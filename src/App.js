@@ -12,7 +12,8 @@ import Footer from './components/footer';
 function App() {
   return (
     <div className="App">
-      <Hero></Hero>  
+      <Hero></Hero>
+      <News></News>
     </div>
   );
 }
