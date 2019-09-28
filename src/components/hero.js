@@ -17,42 +17,51 @@ class Hero extends Component {
 
 	render () {	
 		return (
-			<div>
-				<div>
-					<nav>
+			<div id="hero">
+				<div className='nav'>
+					<nav className='nav-pages'>
+						<img className='nav-pages-logo' src='https://images.pexels.com/photos/2065820/pexels-photo-2065820.jpeg'/>	
 						<ul>
-							<li>*Logo*</li>
 							<li>News</li>
 							<li>Subscribe</li>
 							<li>Courses</li>
 							<li>Contact</li>
 						</ul>
 					</nav>
-					<nav>
+					
+					<nav className='nav-auth'>
 						<ul>
 							<li>
-								<button onClick = {() => this.changeUsername()}>
+								<button className='btn btn-primary' onClick = {() => this.changeUsername()}>
 									{this.state.username}
 								</button>
 							</li>
 							<li>Register</li>
 						</ul>
 					</nav>
+					
+					<form className='form-seach'>
+						<div className='form-seach-icon circle'>
+							<i class="lni-search size-sm"></i>
+						</div>
+						<input className='form-seach-text' type="text" name='search'/>
+					</form>
 				</div>	
-				<div>
-					<div>
-						<p>big picture here</p>
-					</div>	
-					<div>
+				<div className='heroContent'>
+					<div className='heroContent-images'>
+						<img src='https://images.pexels.com/photos/2065820/pexels-photo-2065820.jpeg'/>	
+					</div>
+
+					<nav className='heroContent-social'>
 						<ul>
-							<li>Facebook</li>
-							<li>Linkedin</li>
-							<li>Instagram</li>
-							<li>Mail us</li>
+							<li><i class="lni-facebook-filled"></i></li>
+							<li><i class="lni-instagram-filled"></i></li>
+							<li><i class="lni-linkedin-filled"></i></li>
 						</ul>
-					</div>	
+					</nav>	
 				</div>
 				
+
 			</div>	
 		)
 	}

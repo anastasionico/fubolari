@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from './logo.svg';
-import './App.css';
+import './App.scss';
 
 import Hero from './components/hero';
 import News from './components/news';
@@ -13,11 +13,6 @@ function App() {
   return (
     <div className="App">
       <Hero></Hero>  
-      <News></News>  
-      <Subscribe></Subscribe>
-      <Courses></Courses>
-      <ContactUs></ContactUs>
-      <Footer></Footer>
     </div>
   );
 }

@@ -1,0 +1,58 @@
+.nav {
+	margin: 0 auto;
+	text-align: center;
+	&-pages {
+		
+		&-logo{
+			display: block;
+			margin: 0 auto;
+			padding: 1rem;
+			width: 100px;
+			height: 100px;
+		}
+		
+		ul {
+
+			margin: 0 auto;
+			li {
+				display: inline-block;
+				padding: 0.5rem;
+			}
+			
+		}
+	}
+	&-auth {
+		text-align: center;
+		ul {
+			li {
+				display: inline-block;
+				padding: 0.5rem;
+			}
+			
+		}	
+	}
+
+	.form-seach	{
+		padding: 0.5rem;
+		vertical-align: top;
+		display: inline-block;
+		&-icon {
+			display: inline-block;
+		    padding:0.5rem;
+		    background: $white;
+			color: $violet; 
+			@include circle(50px);
+
+		}
+		&-text {
+		    display: inline-block;
+		    border: 0;
+		    height: 2.5rem;
+		    vertical-align: top;
+		    background: $white;
+		    @include circle(50px);
+		    margin-left: -2.5rem;
+		    display: none;
+		}
+	}
+}
