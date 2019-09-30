@@ -28,27 +28,32 @@ const News = () => {
 						</div>
 						<div className="clearfix"></div>
 					</div>
-
 				</div>
 				
 				<div className='news-card'>
-					<div>
-						<small>Jan</small>
-						<p>1</p>
-						<small>2019</small>
+					<div className='news-card-header'>
+						<h2>Title</h2>
+						<div className='news-card-header-date'>
+							<small>Jan</small>
+							<p>1</p>
+							<small>2019</small>
+						</div>
 					</div>
-					<h2>Title</h2>
-					<div>
-						arrow
+
+					<div className='news-card-footer'>
+						<div className='news-card-footer-link'>
+							<i class="lni-arrow-right-circle"></i>
+						</div>
 					</div>
 				</div>
 				
 				<div className='news-more'>
 					<h2>Title</h2>
-					<div>
-						arrow
+					<div className='news-more-link'>
+						<i class="lni-arrow-right-circle"></i>
 					</div>
 				</div>
+
 			</div>
 		</div>
 	)

@@ -14,6 +14,12 @@ function App() {
     <div className="App">
       <Hero></Hero>
       <News></News>
+      <Subscribe></Subscribe>
+      {/*
+            <Courses></Courses>
+            <ContactUs></ContactUs>
+            <Footer></Footer>
+            */}
     </div>
   );
 }
