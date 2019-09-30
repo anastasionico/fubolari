@@ -13,7 +13,9 @@ function App() {
   return (
     <div className="App">
       <Hero></Hero>
+      
       <News></News>
+      
       <Subscribe></Subscribe>
       {/*
             <Courses></Courses>

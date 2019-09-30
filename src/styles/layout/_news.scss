@@ -1,8 +1,6 @@
 #news {
-	background: $white;
+	background:  darken($white, 10%);
 	color: $violet;
 	display: block;
 	text-align: center;
-
-	height: 60rem;
 }
