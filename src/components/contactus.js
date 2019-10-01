@@ -2,8 +2,20 @@ import React from 'react';
 
 const Contactus = () => {
 	return (
-		<div>
-			<h1>This is Contactus Section</h1>	
+		<div id='contactus'>
+			<div className='contact-panel'>
+				<form>
+					<input type='email' placeholder='Insert your email'/>
+					<input type='subject' placeholder='Insert the subject'/>
+					<textarea>Insert your message</textarea>
+
+					<div className='contact-panel-link'>
+						<button type="submit">
+							<i class="lni-arrow-right-circle"></i>
+						</button>	
+					</div>
+				</form>
+			</div>
 		</div>
 	)
 }

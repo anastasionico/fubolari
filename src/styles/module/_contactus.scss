@@ -1,0 +1,78 @@
+.contact-panel {
+	display: inline-block;
+	border:10px solid $violet;
+	box-sizing: border-box;
+	background:$white;
+	margin: 2rem auto;
+	width: 95%;
+	position:relative;
+
+	form {
+		input, textarea {
+			display: block;
+			outline: none;
+			background:$violet;
+			color: $white;
+			@include circle(50px);
+			border:0;
+			padding:0.5rem 1rem;
+			margin: 1.5rem auto;
+			
+			&[type='submit'] {
+				background:$red;
+			}
+
+			&::placeholder {
+				color : $white;
+			}
+		}
+	}
+
+	
+
+
+	
+	&-link {
+		display: inline-block;
+		padding: 1rem;
+		position: absolute;
+		bottom: -1rem;
+		right: 1rem;
+	
+		@include circle(50px);
+		background:$red;
+		color: $white;
+
+	
+		button {
+			width: 16px;
+			height: 16px;
+			background:$red;
+			color: $white;
+			border:0;
+			padding:0;
+		}
+
+
+
+
+
+
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	}
+}
