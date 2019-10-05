@@ -19,11 +19,7 @@ function App() {
       <Courses></Courses>
       <ContactUs></ContactUs>
       <Sponsor></Sponsor>
-      {/*
-            
-            
-            <Footer></Footer>
-            */}
+      <Footer></Footer>
     </div>
   );
 }

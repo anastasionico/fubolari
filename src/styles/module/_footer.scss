@@ -1,0 +1,36 @@
+#footer {
+	
+	&-left {
+		img {
+			display: block;
+			margin: 0 auto;
+			padding: 1rem;
+			width: 100px;
+			height: 100px;
+		}
+		li {
+			display: block;
+			margin: 1rem 0;
+		}
+	}
+
+	&-right {
+		margin-top: 3rem;
+
+		.footer-social {
+			text-align: center;
+		
+			li {
+				margin: 1rem 1rem 0 ;
+				display: inline-block;
+				// padding: 0.5rem;
+			}
+		}	
+		
+		li {
+			display: block;
+			margin: 1rem 0;
+		}
+	}
+
+}

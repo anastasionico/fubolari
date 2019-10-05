@@ -22,27 +22,40 @@ body {
 }
 
 h1 {
-	font-size: 30px;
+	font-size: 32px;
 }
 h2 {
-	font-size: 25px;
+	font-size: 28px;
 }
 h3 {
-	font-size: 21px;
+	font-size: 25px;
 }
 h4 {
-	font-size: 18px;
+	font-size: 21px;
 }
 h5 {
-	font-size: 15px;
+	font-size: 19px;
 }
 h6 {
-	font-size: 13px;
+	font-size: 17px;
 }
 p {
-	font-size: 12px;
+	font-size: 16px;
+}
+
+li {
+	font-size: 16px;
 }
 
 .clearfix {
 	clear: both;	
 }
+
+$breakpoints: (
+  phonePortrait: 0px,
+  phoneLandscape: 480px,
+  tabletPortrait: 768px,
+  tabletLandscape: 1024px,
+  desktop: 1366px,
+  bigscreen: 1920px,
+);
