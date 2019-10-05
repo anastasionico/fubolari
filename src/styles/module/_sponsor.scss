@@ -1,5 +1,6 @@
 #sponsor {
 	padding: 2rem 0;
+
 	h2 {
 		padding: 2rem;
 	}
@@ -9,6 +10,12 @@
 		width: 66%;
 		margin: 1rem auto;
 
+		@include media(tabletPortrait){
+			// float: left;
+			display: inline-block;
+			width: 20%;
+			margin: 1rem;
+		}		
 	}
 }
 
