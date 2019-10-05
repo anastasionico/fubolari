@@ -20,13 +20,18 @@ class Hero extends Component {
 			<div id="hero">
 				<div className='nav'>
 					<nav className='nav-pages'>
-						<img className='nav-pages-logo' src='https://images.pexels.com/photos/2065820/pexels-photo-2065820.jpeg'/>	
-						<ul>
-							<li>News</li>
-							<li>Subscribe</li>
-							<li>Courses</li>
-							<li>Contact</li>
-						</ul>
+						<div className='nav-pages-logo'>
+							<img src='https://images.pexels.com/photos/2065820/pexels-photo-2065820.jpeg'/>	
+						</div>
+						<div className='nav-pages-list'>
+							<ul>
+								<li>News</li>
+								<li>Subscribe</li>
+								<li>Courses</li>
+								<li>Contact</li>
+							</ul>
+						</div>
+						<div className='clearfix'></div>
 					</nav>
 					
 					<nav className='nav-auth'>
@@ -46,6 +51,8 @@ class Hero extends Component {
 						</div>
 						<input className='form-seach-text' type="text" name='search'/>
 					</form>
+					<div className='clearfix'></div>
+
 				</div>	
 				<div className='heroContent'>
 					<div className='heroContent-images'>
@@ -60,8 +67,6 @@ class Hero extends Component {
 						</ul>
 					</nav>	
 				</div>
-				
-
 			</div>	
 		)
 	}
