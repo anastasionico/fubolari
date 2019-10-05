@@ -54,12 +54,19 @@
 
 	.news-card {
 		text-align: left;
+
+		@include media(tabletPortrait){
+			float: left;
+			display: inline-block;
+			width: 25%;
+		}		
 		
 		&-header {
 			height: 4rem;
 			padding: 1rem;
 			color: $violet;
 			background:$white;
+
 			&-date {
 				display: inline-block;
  				margin-top: 0.7rem; 
@@ -67,6 +74,10 @@
 	 			color: $violet;	
 	 			background:$white;
 				@include circle(50px);
+
+				@include media(tabletPortrait){
+					padding: 0;
+				}		
 
 	 			p, small {
 	 				display: inline-block;
@@ -100,6 +111,14 @@
 		background:$orange;
 		position:relative;
 		text-align: center;
+
+		@include media(tabletPortrait){
+			float: left;
+			display: inline-block;
+			width: 25%;
+			height: 16rem;
+		}		
+
 		h2 {
 			padding-top: 6rem;
 		}

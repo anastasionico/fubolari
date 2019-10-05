@@ -1,17 +1,42 @@
 .heroContent {
 	&-images {
+		@include media(tabletPortrait){
+			display: inline-block;
+			width: 90%;
+			float: left;
+		}
+
 		img {
 			max-width: 100%;	
+			margin-bottom: 1rem;
 		}
 		
 	}	
 	&-social {
 		text-align: center;
+
+		@include media(tabletPortrait){
+			display: inline-block;
+			width: 10%;
+			float: left;
+			margin-top: 28%;
+		}
+
 		ul {
 			color: $orange;
+
+			@include media(tabletPortrait){
+					
+			}
+
 			li {
 				display: inline-block;
 				padding: 0.5rem;
+
+				@include media(tabletPortrait){
+
+					display: block;	
+				}
 			}
 			
 		}	

@@ -52,8 +52,8 @@ class Hero extends Component {
 						<input className='form-seach-text' type="text" name='search'/>
 					</form>
 					<div className='clearfix'></div>
-
 				</div>	
+				
 				<div className='heroContent'>
 					<div className='heroContent-images'>
 						<img src='https://images.pexels.com/photos/2065820/pexels-photo-2065820.jpeg'/>	
@@ -66,6 +66,8 @@ class Hero extends Component {
 							<li><i class="lni-linkedin-filled"></i></li>
 						</ul>
 					</nav>	
+
+					<div className='clearfix'></div>
 				</div>
 			</div>	
 		)
