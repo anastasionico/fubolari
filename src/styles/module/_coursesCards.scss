@@ -13,6 +13,13 @@
 		background-size: cover;
 		position:relative;
 		text-align: center;
+
+		@include media(tabletPortrait){
+			float: left;
+			display: inline-block;
+			width: 25%;
+		}		
+		
 		h2 {
 			padding-top: 6rem;
 		}
