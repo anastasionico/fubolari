@@ -47,7 +47,7 @@ class Hero extends Component {
 					
 					<form className='form-seach'>
 						<div className='form-seach-icon circle'>
-							<i class="lni-search size-sm"></i>
+							<i className="lni-search size-sm"></i>
 						</div>
 						<input className='form-seach-text' type="text" name='search'/>
 					</form>
@@ -61,9 +61,9 @@ class Hero extends Component {
 
 					<nav className='heroContent-social'>
 						<ul>
-							<li><i class="lni-facebook-filled"></i></li>
-							<li><i class="lni-instagram-filled"></i></li>
-							<li><i class="lni-linkedin-filled"></i></li>
+							<li><i className="lni-facebook-filled"></i></li>
+							<li><i className="lni-instagram-filled"></i></li>
+							<li><i className="lni-linkedin-filled"></i></li>
 						</ul>
 					</nav>	
 

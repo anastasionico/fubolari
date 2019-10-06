@@ -5,4 +5,11 @@
 	text-align: center;
 	margin: 2rem auto;
 	width: 95%;
+
+	@include media(tabletPortrait){
+		height: 35rem;
+	}
+	@include media(tabletLandscape){
+		height: 15rem;
+	}
 }

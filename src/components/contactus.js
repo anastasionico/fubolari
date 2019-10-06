@@ -11,7 +11,7 @@ const Contactus = () => {
 
 					<div className='contact-panel-link'>
 						<button type="submit">
-							<i class="lni-arrow-right-circle"></i>
+							<i className="lni-arrow-right-circle"></i>
 						</button>	
 					</div>
 				</form>

@@ -24,7 +24,7 @@ const News = () => {
 						</div>
 
 						<div className='news-featured-footer-link'>
-							<i class="lni-arrow-right-circle"></i>
+							<i className="lni-arrow-right-circle"></i>
 						</div>
 						<div className="clearfix"></div>
 					</div>
@@ -42,7 +42,7 @@ const News = () => {
 
 					<div className='news-card-footer'>
 						<div className='news-card-footer-link'>
-							<i class="lni-arrow-right-circle"></i>
+							<i className="lni-arrow-right-circle"></i>
 						</div>
 					</div>
 				</div>
@@ -58,7 +58,7 @@ const News = () => {
 
 					<div className='news-card-footer'>
 						<div className='news-card-footer-link'>
-							<i class="lni-arrow-right-circle"></i>
+							<i className="lni-arrow-right-circle"></i>
 						</div>
 					</div>
 				</div>
@@ -74,7 +74,7 @@ const News = () => {
 
 					<div className='news-card-footer'>
 						<div className='news-card-footer-link'>
-							<i class="lni-arrow-right-circle"></i>
+							<i className="lni-arrow-right-circle"></i>
 						</div>
 					</div>
 				</div>
@@ -82,7 +82,7 @@ const News = () => {
 				<div className='news-more'>
 					<h2>Title</h2>
 					<div className='news-more-link'>
-						<i class="lni-arrow-right-circle"></i>
+						<i className="lni-arrow-right-circle"></i>
 					</div>
 				</div>
 

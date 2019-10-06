@@ -3,6 +3,9 @@
 	background:$red;
 	margin: 2rem auto;
 	width: 95%;
+	@include media(tabletLandscape){
+		margin: 5rem auto;
+	}
 
 	.news-featured {
 		text-align: left;

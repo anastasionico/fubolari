@@ -17,9 +17,9 @@ const Footer = () => {
 				<h3>Contact Us</h3>
 				
 				<ul className='footer-social'>
-					<li><i class="lni-facebook-filled"></i></li>
-					<li><i class="lni-instagram-filled"></i></li>
-					<li><i class="lni-linkedin-filled"></i></li>
+					<li><i className="lni-facebook-filled"></i></li>
+					<li><i className="lni-instagram-filled"></i></li>
+					<li><i className="lni-linkedin-filled"></i></li>
 				</ul>
 				
 				<ul>
@@ -32,6 +32,7 @@ const Footer = () => {
 					<li>987 654321</li>
 				</ul>
 			</div>
+			<div className='clearfix'></div>
 		</div>
 	)
 }

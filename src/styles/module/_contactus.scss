@@ -6,6 +6,7 @@
 	margin: 2rem auto;
 	width: 95%;
 	position:relative;
+	
 
 	form {
 		input, textarea {
@@ -17,6 +18,12 @@
 			border:0;
 			padding:0.5rem 1rem;
 			margin: 1.5rem auto;
+			font-family: 'Questrial', sans-serif;
+
+			@include media(tabletPortrait){
+				width: 80%;
+				
+			}		
 			
 			&[type='submit'] {
 				background:$red;
@@ -52,27 +59,5 @@
 			border:0;
 			padding:0;
 		}
-
-
-
-
-
-
-			
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 	}
 }

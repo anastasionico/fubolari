@@ -1,12 +1,25 @@
 #footer {
-	
 	&-left {
+		@include media(tabletPortrait){
+			display: inline-block;
+			box-sizing: border-box;
+			width: 50%;
+			float: left;
+			text-align: left;
+		}		
+		
 		img {
 			display: block;
 			margin: 0 auto;
 			padding: 1rem;
 			width: 100px;
 			height: 100px;
+
+			@include media(tabletPortrait){
+				// margin: inherit;
+				margin: 0 0 1rem 0;
+				padding:0;
+			}
 		}
 		li {
 			display: block;
@@ -17,14 +30,31 @@
 	&-right {
 		margin-top: 3rem;
 
+		@include media(tabletPortrait){
+			display: inline-block;
+			box-sizing: border-box;
+			width: 50%;
+			float: left;
+			text-align: left;
+			margin-top: 0rem;
+		}		
+
 		.footer-social {
 			text-align: center;
 		
+			@include media(tabletPortrait){
+				text-align: left;
+			}
+			
 			li {
 				margin: 1rem 1rem 0 ;
 				display: inline-block;
-				// padding: 0.5rem;
+
+				@include media(tabletPortrait){
+					margin: 1rem 1rem 0 0;
+				}
 			}
+
 		}	
 		
 		li {

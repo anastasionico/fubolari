@@ -7,25 +7,25 @@ const Courses = () => {
 				<div className='course-card'>
 					<h2>Computer Science</h2>
 					<div className='course-card-link'>
-						<i class="lni-arrow-right-circle"></i>
+						<i className="lni-arrow-right-circle"></i>
 					</div>
 				</div>
 				<div className='course-card'>
 					<h2>Computer Science</h2>
 					<div className='course-card-link'>
-						<i class="lni-arrow-right-circle"></i>
+						<i className="lni-arrow-right-circle"></i>
 					</div>
 				</div>
 				<div className='course-card'>
 					<h2>Computer Science</h2>
 					<div className='course-card-link'>
-						<i class="lni-arrow-right-circle"></i>
+						<i className="lni-arrow-right-circle"></i>
 					</div>
 				</div>
 				<div className='course-card'>
 					<h2>Computer Science</h2>
 					<div className='course-card-link'>
-						<i class="lni-arrow-right-circle"></i>
+						<i className="lni-arrow-right-circle"></i>
 					</div>
 				</div>
 			</div>

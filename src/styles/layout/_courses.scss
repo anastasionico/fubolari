@@ -3,4 +3,7 @@
 	color: $violet;
 	display: block;
 	text-align: center;
+	@include media(tabletLandscape){
+		margin: 5rem auto;
+	}
 }
