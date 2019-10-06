@@ -2,13 +2,13 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.scss';
 
-import Hero from './components/hero';
-import News from './components/news';
-import Subscribe from './components/subscribe';
-import Courses from './components/courses';
-import ContactUs from './components/contactus';
-import Sponsor from './components/sponsor';
-import Footer from './components/footer';
+import Hero from './components/hero/Hero';
+import News from './components/news/News';
+import Subscribe from './components/Subscribe';
+import Courses from './components/courses/Courses';
+import ContactUs from './components/Contactus';
+import Sponsor from './components/Sponsor';
+import Footer from './components/Footer';
 
 function App() {
   return (
