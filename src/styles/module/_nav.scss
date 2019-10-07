@@ -50,6 +50,9 @@
 			@include media(tabletLandscape){
 				padding: 1.7rem 0;
 			}
+			@include media(desktop){
+				padding: 2.5rem 0;
+			}
 
 			li {
 				display: inline-block;
@@ -70,6 +73,9 @@
 		}		
 		@include media(tabletLandscape){
 			padding: 1.7rem 0;
+		}
+		@include media(desktop){
+			padding: 2.5rem 0;
 		}
 		
 		ul {
@@ -99,6 +105,9 @@
 		}		
 		@include media(tabletLandscape){
 			padding: 1.7rem 1.6rem 0 0;
+		}
+		@include media(desktop){
+			padding: 2.5rem 1.6rem 0 0;
 		}
 
 		&-icon {

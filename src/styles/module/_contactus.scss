@@ -20,9 +20,13 @@
 			margin: 1.5rem auto;
 			font-family: 'Questrial', sans-serif;
 
+
+
 			@include media(tabletPortrait){
 				width: 80%;
-				
+			}		
+			@include media(desktop){
+				padding:0.7rem 3rem;
 			}		
 			
 			&[type='submit'] {

@@ -18,6 +18,9 @@
 		.news-featured-header {
 			padding: 1rem;
 			color: $white;
+			@include media(desktop){
+				padding: 3rem;
+			}		
 
 			.news-featured-social {
 				margin-top: 0.5rem;
@@ -32,6 +35,9 @@
 		.news-featured-footer {
 			margin: 1rem 1rem 0 1rem;
 			
+			@include media(desktop){
+				padding: 2rem;
+			}		
 	 		&-date {
  				float:left;
  				margin-top: 0.7rem; 
@@ -39,6 +45,8 @@
 	 			background:$white;
 				
 				@include circle(50px);
+
+				
 
 	 			p, small {
 	 				display: inline-block;
