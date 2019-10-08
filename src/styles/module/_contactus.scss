@@ -9,21 +9,23 @@
 	
 
 	form {
+		padding: 3rem;
 		input, textarea {
-			display: block;
+			display: inline-block;
 			outline: none;
 			background:$violet;
 			color: $white;
 			@include circle(50px);
 			border:0;
 			padding:0.5rem 1rem;
-			margin: 1.5rem auto;
+			margin: 1rem auto;
 			font-family: 'Questrial', sans-serif;
+			width: 50%;
 
 
 
 			@include media(tabletPortrait){
-				width: 80%;
+				width: 50%;
 			}		
 			@include media(desktop){
 				padding:0.7rem 3rem;

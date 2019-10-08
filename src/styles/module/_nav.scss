@@ -94,7 +94,8 @@
 		padding: 0.5rem;
 		vertical-align: top;
 		display: inline-block;
-		
+		cursor: pointer;
+
 		@include media(tabletPortrait){
 			display: inline-block;
 			box-sizing: border-box;
@@ -112,26 +113,36 @@
 
 		&-icon {
 			display: inline-block;
-		    padding:0.5rem;
-		    background: $white;
+			padding:0.3rem;
+			background: $white;
 			color: $violet; 
 			@include circle(50px);
+			
 
-			@include media(tabletPortrait){
-				padding: 0.1rem;
-			}		
+			& i {
+				width: 20px;
+				height: 20px;
+			}
 
 		}
 
 		#form-seach-text {
 		    border: 0;
-		    height: 1.5rem;
+		    height: 1.6rem;
 		    vertical-align: top;
 		    background: $white;
 		    @include circle(50px);
-		    margin-left: -2.5rem;
-		    display: none;
-		    outline:none;
+			width: 0;
+			opacity:0;
+			outline:none;
+			margin-right: -1.5rem;
+			transition:all 0.3s ease-in-out;
+
+			&.active {
+				width: 75%;
+				transition:all 0.3s ease-in-out;
+				opacity:1;
+			}
 		}
 	}
 }

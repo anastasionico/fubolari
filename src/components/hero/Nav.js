@@ -4,9 +4,12 @@ class Nav extends Component {
 	constructor () {
 		super()
 		this.state = {
-			username : 'Login'
+			username : 'Login',
+			searchField: false,
+			
 		}
 		this.changeUsername = this.changeUsername.bind(this);
+		this.showSearchText = this.showSearchText.bind(this)
 	}
 
 	changeUsername() {
@@ -24,8 +27,8 @@ class Nav extends Component {
 	}
 
 	showSearchText() {
-		const seachText = document.getElementById('form-seach-text');
-		seachText.style.display = 'inline-block';
+		const currentState = this.state.searchField;
+		this.setState({ searchField: !currentState });
 	}
 
 	render () {
@@ -58,9 +61,14 @@ class Nav extends Component {
 				</nav>
 				
 				<form className='form-seach'>
-					<input id='form-seach-text' type="text" name='search'/>
+					<input 
+						id='form-seach-text' 
+						type="text" 
+						name='search' 
+						className={this.state.searchField ? 'active': null}
+					/>
 					<div className='form-seach-icon circle'>
-						<i className="lni-search size-sm" onClick={this.showSearchText}></i>
+						<i className="lni-search" onClick={this.showSearchText}></i>
 					</div>
 				</form>
 				<div className='clearfix'></div>

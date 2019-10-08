@@ -30,8 +30,12 @@
 		padding:0.5rem 1rem;
 		margin-top: 1.5rem;
 
+		@include media(tabletPortrait){
+			width: 42%;
+		}		
 		@include media(desktop){
 			padding:0.7rem 3rem;
+			width: 45%;
 		}		
 		
 		&::placeholder {
