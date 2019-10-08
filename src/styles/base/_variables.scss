@@ -14,11 +14,18 @@ body {
 	padding: 0.3rem 1rem;
 	border:0;
 	@include circle(50px);
+	outline: none;
+	cursor:pointer;
 }
 
 .btn-primary {
 	background: $orange;
 	color: $violet;
+	transition:all 0.3s ease-in-out;
+	&:hover {
+		background: $red;
+		color: $white;
+	}
 }
 
 h1 {

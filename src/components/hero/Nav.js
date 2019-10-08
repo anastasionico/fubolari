@@ -4,21 +4,28 @@ class Nav extends Component {
 	constructor () {
 		super()
 		this.state = {
-			username : 'login'
+			username : 'Login'
 		}
+		this.changeUsername = this.changeUsername.bind(this);
 	}
 
 	changeUsername() {
-		if (this.state.username == 'login') {
+		console.log(this.state.username);
+		if (this.state.username == 'Login') {
 			this.setState({
 				username : 'Nico'	
 			})	
 		} else {
 			this.setState({
-				username : 'login'	
+				username : 'Login'	
 			})	
 		}
 		
+	}
+
+	showSearchText() {
+		const seachText = document.getElementById('form-seach-text');
+		seachText.style.display = 'inline-block';
 	}
 
 	render () {
@@ -42,7 +49,7 @@ class Nav extends Component {
 				<nav className='nav-auth'>
 					<ul>
 						<li>
-							<button className='btn btn-primary' onClick = {() => this.changeUsername()}>
+							<button className='btn btn-primary' onClick = {this.changeUsername}>
 								{this.state.username}
 							</button>
 						</li>
@@ -51,10 +58,10 @@ class Nav extends Component {
 				</nav>
 				
 				<form className='form-seach'>
+					<input id='form-seach-text' type="text" name='search'/>
 					<div className='form-seach-icon circle'>
-						<i className="lni-search size-sm"></i>
+						<i className="lni-search size-sm" onClick={this.showSearchText}></i>
 					</div>
-					<input className='form-seach-text' type="text" name='search'/>
 				</form>
 				<div className='clearfix'></div>
 			</div>	

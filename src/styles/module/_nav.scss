@@ -118,20 +118,20 @@
 			@include circle(50px);
 
 			@include media(tabletPortrait){
-				padding: 0.2rem;
+				padding: 0.1rem;
 			}		
 
 		}
 
-		&-text {
-		    display: inline-block;
+		#form-seach-text {
 		    border: 0;
-		    height: 2.5rem;
+		    height: 1.5rem;
 		    vertical-align: top;
 		    background: $white;
 		    @include circle(50px);
 		    margin-left: -2.5rem;
 		    display: none;
+		    outline:none;
 		}
 	}
 }
