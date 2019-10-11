@@ -1,17 +1,45 @@
 .heroContent {
-	&-images {
+	&-imagesContainer {
 		@include media(tabletPortrait){
 			display: inline-block;
 			width: 90%;
+			height: 87vh;
 			float: left;
+			position: relative;
 		}
 
-		img {
-			max-width: 100%;	
-			margin-bottom: 1rem;
+		&-background {
+		
+
+			width: 100%;	
+			height: 69vh;
+			
+			@include media(tabletPortrait){
+				position:absolute;
+				top:0;
+				left:0;
+				right:0;
+				bottom:1rem;		
+				margin-bottom: 1rem;
+			}
+			
 		}
 		
 	}	
+
+	&-imagesIndex{
+		margin:1rem auto -3rem;
+		background:red;
+		text-align:center;
+		img {
+			box-shadow: 0px 3px 2px $black;
+			margin: 0 1rem;
+			border-radius:50%;
+			width:2rem;
+			height:2rem;
+		}
+
+	}
 	&-social {
 		text-align: center;
 		
@@ -31,15 +59,12 @@
 			}
 
 			li {
-				// display: inline-block;
 				padding: 0.5rem;
 
 				@include media(tabletPortrait){
-
-					// display: block;	
+	
 				}
 			}
-			
 		}	
 	}	
 }

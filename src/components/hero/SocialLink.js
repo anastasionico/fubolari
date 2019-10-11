@@ -21,8 +21,6 @@ class SocialLink extends Component{
 	}
 
 
-	
-
 	changeVisibility = () => {
 		const listItems = this.navRef.current.firstChild.children 	
 		for (var i = 0; i < listItems.length; i++) {
