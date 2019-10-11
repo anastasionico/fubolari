@@ -1,11 +1,12 @@
 .course-panel {
 	display: inline-block;
-	background:$violet;
+	background:$white;
 	margin: 2rem auto;
 	width: 95%;
 
 	.course-card {
 		height: 14rem;
+		
 		color: $white;
 		background-image:
 			linear-gradient(to bottom, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)),
@@ -17,6 +18,9 @@
 		@include media(tabletPortrait){
 			display: inline-block;
 			width: 25%;
+		}		
+		@include media(desktop){
+			padding: 4rem 0;
 		}		
 
 		h2 {
