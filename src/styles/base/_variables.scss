@@ -58,6 +58,10 @@ li {
 	clear: both;	
 }
 
+.hidden {
+	display:none;
+}
+
 $breakpoints: (
   phonePortrait: 0px,
   phoneLandscape: 480px,

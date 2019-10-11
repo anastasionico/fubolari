@@ -30,12 +30,12 @@
 			}
 
 			li {
-				display: inline-block;
+				// display: inline-block;
 				padding: 0.5rem;
 
 				@include media(tabletPortrait){
 
-					display: block;	
+					// display: block;	
 				}
 			}
 			

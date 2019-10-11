@@ -11,7 +11,7 @@ class Nav extends Component {
 
 	changeUsername() {
 		console.log(this.state.username);
-		if (this.state.username == 'Login') {
+		if (this.state.username === 'Login') {
 			this.setState({
 				username : 'Nico'	
 			})	
@@ -33,7 +33,7 @@ class Nav extends Component {
 			<div className='nav'>
 				<nav className='nav-pages'>
 					<div className='nav-pages-logo'>
-						<img src='https://images.pexels.com/photos/2065820/pexels-photo-2065820.jpeg'/>	
+						<img src='https://images.pexels.com/photos/2065820/pexels-photo-2065820.jpeg' alt='logo'/>	
 					</div>
 					<div className='nav-pages-list'>
 						<ul>

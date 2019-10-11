@@ -1,4 +1,5 @@
 import React from 'react'
+import SocialLink from './SocialLink'
 
 const HeroContent = () => {
 	return (
@@ -7,13 +8,7 @@ const HeroContent = () => {
 				<img src='https://images.pexels.com/photos/2065820/pexels-photo-2065820.jpeg'/>	
 			</div>
 
-			<nav className='heroContent-social'>
-				<ul>
-					<li><i className="lni-facebook-filled"></i></li>
-					<li><i className="lni-instagram-filled"></i></li>
-					<li><i className="lni-linkedin-filled"></i></li>
-				</ul>
-			</nav>	
+			<SocialLink/>
 
 			<div className='clearfix'></div>
 		</div>
