@@ -27,7 +27,6 @@ class SocialLink extends Component{
 			(function (i) {
 	            setTimeout(function () {
 	            	listItems[i].className = ''
-	                console.log(listItems[i]);
 	            }, 500 * i);
 	        })(i);
 	    }

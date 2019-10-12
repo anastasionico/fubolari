@@ -13,7 +13,6 @@ class Nav extends Component {
 	}
 
 	changeUsername() {
-		console.log(this.state.username);
 		if (this.state.username === 'Login') {
 			this.setState({
 				username : 'Nico'	
