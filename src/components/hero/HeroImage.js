@@ -17,9 +17,22 @@ class HeroImage extends Component {
 	constructor () {
 		super()
 		this.state = {
-			visible:1
+			visible:0
 		} 
 	}
+
+	componentDidMount () {
+		for (var i = 0; i < heroImages.length; i++) {
+			((i) => {
+	            setTimeout(() => {
+	            	this.setState({
+	            		visible: i
+      				});
+	            }, 5000 );
+	        })(i);
+	    }
+	}
+
 
 
 	render () {
@@ -33,17 +46,14 @@ class HeroImage extends Component {
 						)}
 					</div>
 
-					{heroImages.map(heroImage => 
+					{heroImages.map((heroImage, i) => {
+						{if (i === this.state.visible) {
+							return <div className='heroContent-heroImages-imagesContainer-background' 
+								style ={ { backgroundImage: "url("+heroImage+")" } }>
+							</div>	
+						}}
+					})}
 
-						<div 
-							className='heroContent-heroImages-imagesContainer-background' 
-							style ={ { backgroundImage: "url("+heroImage+")" } }
-						>
-						</div>
-					)}
-
-					
-	
 				</div>
 				
 				{/* 

@@ -30,11 +30,6 @@ class SocialLink extends Component{
 	            }, 500 * i);
 	        })(i);
 	    }
-			
-
-		
-		
-		
 	}
 
 	
