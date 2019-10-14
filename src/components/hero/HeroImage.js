@@ -30,7 +30,7 @@ class HeroImage extends Component {
 	            	this.setState({
 	            		visible: i
 					  });
-				}, 1500 * i);
+				}, 10000 * i);
 			})(i);
 			
 	    }
@@ -44,6 +44,7 @@ class HeroImage extends Component {
 				<div className='heroContent-heroImages-imagesContainer'>
 					
 					<div className='heroContent-heroImages-imagesContainer-index'>
+						{/*<p className='heroContent-heroImages-imagesContainer-index-legenda'>{this.state.visible+1} / {heroImages.length}</p>*/}
 						{heroImages.map((heroImage, i) => {
 							{if (i === this.state.visible) {
 								return <img className={"b-red"} src={heroImage} />	
@@ -57,12 +58,20 @@ class HeroImage extends Component {
 					</div>
 
 					{heroImages.map((heroImage, i) => {
-						{if (i === this.state.visible) {
+						{if (i > this.state.visible) {
 							return <div className='heroContent-heroImages-imagesContainer-background' 
 								style ={ { backgroundImage: "url("+heroImage+")" } }>
 							</div>	
-						}}
-					})}
+						} if (i === this.state.visible) {
+							return <div className='heroContent-heroImages-imagesContainer-background visible' 
+								style ={ { backgroundImage: "url("+heroImage+")" } }>
+							</div>	
+						} else {
+							return <div className='heroContent-heroImages-imagesContainer-background passed' 
+								style ={ { backgroundImage: "url("+heroImage+")" } }>
+							</div>	
+						}
+					}} ) }
 
 				</div>
 				
