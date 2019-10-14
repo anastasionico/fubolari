@@ -2,9 +2,9 @@ $red : #f67280;
 $orange : #f8b595;
 $pink : #c06c84;
 $violet : #6c5b7c;
-
 $black : #111;
 $white : #fff;
+
 
 body {
 	font-family: 'Questrial', sans-serif;
@@ -27,6 +27,11 @@ body {
 		color: $white;
 	}
 }
+
+.b-red {
+	border-color:$red !important;
+}
+
 
 h1 {
 	font-size: 32px;
@@ -58,10 +63,6 @@ li {
 }
 .hidden {
 	display: none !important;
-}
-
-.hidden {
-	display:none;
 }
 
 $breakpoints: (

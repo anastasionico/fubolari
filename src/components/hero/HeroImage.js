@@ -3,7 +3,9 @@ import React, {Component} from 'react'
 
 const heroImages = [
 	'https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_960_720.jpg',
-	'https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg'
+	'https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg',
+	'https://upload.wikimedia.org/wikipedia/commons/3/30/Echo_Park_Lake_with_Downtown_Los_Angeles_Skyline.jpg',
+	'https://upload.wikimedia.org/wikipedia/commons/8/89/Los_Angeles%2C_Winter_2016.jpg'
 
 ]
 const firstBackground = {
@@ -27,9 +29,10 @@ class HeroImage extends Component {
 	            setTimeout(() => {
 	            	this.setState({
 	            		visible: i
-      				});
-	            }, 5000 );
-	        })(i);
+					  });
+				}, 1500 * i);
+			})(i);
+			
 	    }
 	}
 
@@ -41,9 +44,16 @@ class HeroImage extends Component {
 				<div className='heroContent-heroImages-imagesContainer'>
 					
 					<div className='heroContent-heroImages-imagesContainer-index'>
-						{heroImages.map(heroImage => 
-							<img src={heroImage} />
-						)}
+						{heroImages.map((heroImage, i) => {
+							{if (i === this.state.visible) {
+								return <img className={"b-red"} src={heroImage} />	
+							}else{
+								return <img src={heroImage} />	
+							}} 
+							
+						})}
+
+
 					</div>
 
 					{heroImages.map((heroImage, i) => {
