@@ -15,12 +15,14 @@ const secondBackground = {
 	backgroundImage: `url(${heroImages[1]})`
 }
 
+
 class HeroImage extends Component {
 	constructor () {
 		super()
 		this.state = {
 			visible:0
 		} 
+		this.changeHero = this.changeHero.bind(this);
 	}
 
 	componentDidMount () {
@@ -36,7 +38,11 @@ class HeroImage extends Component {
 	    }
 	}
 
-
+	changeHero(i) {
+		this.setState({
+			visible: i
+	  	});
+	}	
 
 	render () {
 		return (
@@ -47,9 +53,9 @@ class HeroImage extends Component {
 						{/*<p className='heroContent-heroImages-imagesContainer-index-legenda'>{this.state.visible+1} / {heroImages.length}</p>*/}
 						{heroImages.map((heroImage, i) => {
 							{if (i === this.state.visible) {
-								return <img className={"b-red"} src={heroImage} />	
+								return <img className={"b-red"} src={heroImage}  />	
 							}else{
-								return <img src={heroImage} />	
+								return <img src={heroImage} onClick={this.changeHero.bind(this, i)}/>	
 							}} 
 							
 						})}
