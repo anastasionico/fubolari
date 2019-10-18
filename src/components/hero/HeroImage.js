@@ -53,9 +53,9 @@ class HeroImage extends Component {
 						{/*<p className='heroContent-heroImages-imagesContainer-index-legenda'>{this.state.visible+1} / {heroImages.length}</p>*/}
 						{heroImages.map((heroImage, i) => {
 							{if (i === this.state.visible) {
-								return <img className={"b-red"} src={heroImage}  />	
+								return <img key={heroImage} src={heroImage} className={"b-red"} />	
 							}else{
-								return <img src={heroImage} onClick={this.changeHero.bind(this, i)}/>	
+								return <img key={heroImage} src={heroImage} onClick={this.changeHero.bind(this, i)}/>	
 							}} 
 							
 						})}
@@ -65,15 +65,15 @@ class HeroImage extends Component {
 
 					{heroImages.map((heroImage, i) => {
 						{if (i > this.state.visible) {
-							return <div className='heroContent-heroImages-imagesContainer-background' 
+							return <div key={heroImage} className='heroContent-heroImages-imagesContainer-background' 
 								style ={ { backgroundImage: "url("+heroImage+")" } }>
 							</div>	
 						} if (i === this.state.visible) {
-							return <div className='heroContent-heroImages-imagesContainer-background visible' 
+							return <div key={heroImage} className='heroContent-heroImages-imagesContainer-background visible' 
 								style ={ { backgroundImage: "url("+heroImage+")" } }>
 							</div>	
 						} else {
-							return <div className='heroContent-heroImages-imagesContainer-background passed' 
+							return <div key={heroImage} className='heroContent-heroImages-imagesContainer-background passed' 
 								style ={ { backgroundImage: "url("+heroImage+")" } }>
 							</div>	
 						}

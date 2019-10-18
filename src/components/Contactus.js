@@ -7,7 +7,7 @@ const Contactus = () => {
 				<form>
 					<input type='email' placeholder='Insert your email'/>
 					<input type='subject' placeholder='Insert the subject'/>
-					<textarea>Insert your message</textarea>
+					<textarea defaultValue="Insert your message" />
 
 					<div className='contact-panel-link'>
 						<button type="submit">
