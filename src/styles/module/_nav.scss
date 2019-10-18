@@ -27,9 +27,9 @@
 			img {
 				display: block;
 				margin: 0 auto;
-				padding: 1rem;
-				width: 100px;
-				height: 100px;	
+				padding: 0.5rem;
+				width: 50px;
+				height: 50px;	
 
 				@include media(tabletPortrait){
 					width: 50%;
@@ -93,8 +93,9 @@
 	.form-seach	{
 		padding: 0.5rem;
 		vertical-align: top;
-		display: inline-block;
+		display: none;
 		cursor: pointer;
+
 
 		@include media(tabletPortrait){
 			display: inline-block;

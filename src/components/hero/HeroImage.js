@@ -2,11 +2,11 @@ import React, {Component} from 'react'
 
 
 const heroImages = [
-	'https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_960_720.jpg',
-	'https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg',
-	'https://upload.wikimedia.org/wikipedia/commons/3/30/Echo_Park_Lake_with_Downtown_Los_Angeles_Skyline.jpg',
-	'https://upload.wikimedia.org/wikipedia/commons/8/89/Los_Angeles%2C_Winter_2016.jpg'
-
+	'https://cdn.shopify.com/s/files/1/0066/5134/7014/products/823adb2c13ac43bd837e5a1e51207cb6_1024x1024@2x.jpg',
+	'https://cdn.shopify.com/s/files/1/0066/5134/7014/files/1_634115a3-0e3a-42e2-82f6-3d1f05c4da32_1280x.jpg',
+	'https://cdn.shopify.com/s/files/1/0066/5134/7014/products/website_1024x1024@2x.jpg',
+	'https://cdn.shopify.com/s/files/1/0066/5134/7014/products/e1721a0b51444933b6f98ff68e82e03a_1024x1024@2x.jpg'
+	
 ]
 const firstBackground = {
 	backgroundImage: `url(${heroImages[0]})`
@@ -32,7 +32,7 @@ class HeroImage extends Component {
 	            	this.setState({
 	            		visible: i
 					  });
-				}, 10000 * i);
+				}, 5000 * i);
 			})(i);
 			
 	    }
