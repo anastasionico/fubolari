@@ -8,12 +8,7 @@ const heroImages = [
 	'https://cdn.shopify.com/s/files/1/0066/5134/7014/products/e1721a0b51444933b6f98ff68e82e03a_1024x1024@2x.jpg'
 	
 ]
-const firstBackground = {
-	backgroundImage: `url(${heroImages[0]})`
-}
-const secondBackground = {
-	backgroundImage: `url(${heroImages[1]})`
-}
+
 
 
 class HeroImage extends Component {
@@ -52,11 +47,11 @@ class HeroImage extends Component {
 					<div className='heroContent-heroImages-imagesContainer-index'>
 						{/*<p className='heroContent-heroImages-imagesContainer-index-legenda'>{this.state.visible+1} / {heroImages.length}</p>*/}
 						{heroImages.map((heroImage, i) => {
-							{if (i === this.state.visible) {
-								return <img key={heroImage} src={heroImage} className={"b-red"} />	
+							if (i === this.state.visible) { 
+								return <img key={heroImage} src={heroImage} alt={heroImage} className={"b-red"} />	
 							}else{
-								return <img key={heroImage} src={heroImage} onClick={this.changeHero.bind(this, i)}/>	
-							}} 
+								return <img key={heroImage} src={heroImage} alt={heroImage} onClick={this.changeHero.bind(this, i)}/>	
+							}
 							
 						})}
 
@@ -64,8 +59,7 @@ class HeroImage extends Component {
 					</div>
 
 					{heroImages.map((heroImage, i) => {
-						{if (i > this.state.visible) {
-							return <div key={heroImage} className='heroContent-heroImages-imagesContainer-background' 
+						if (i > this.state.visible) { return <div key={heroImage} className='heroContent-heroImages-imagesContainer-background' 
 								style ={ { backgroundImage: "url("+heroImage+")" } }>
 							</div>	
 						} if (i === this.state.visible) {
@@ -77,7 +71,7 @@ class HeroImage extends Component {
 								style ={ { backgroundImage: "url("+heroImage+")" } }>
 							</div>	
 						}
-					}} ) }
+					})}
 
 				</div>
 				

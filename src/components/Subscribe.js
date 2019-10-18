@@ -12,11 +12,11 @@ const Subscribe = () => {
 				</form>
 			</div>
 			
-			<img id="subscribe-1" src='https://images.pexels.com/photos/2065820/pexels-photo-2065820.jpeg'/>
-			<img id="subscribe-2" src='https://images.pexels.com/photos/2065820/pexels-photo-2065820.jpeg'/>
-			<img id="subscribe-3" src='https://images.pexels.com/photos/2065820/pexels-photo-2065820.jpeg'/>
-			<img id="subscribe-4" src='https://images.pexels.com/photos/2065820/pexels-photo-2065820.jpeg'/>
-			<img id="subscribe-5" src='https://images.pexels.com/photos/2065820/pexels-photo-2065820.jpeg'/>
+			<img id="subscribe-1" alt='subImage' src='https://images.pexels.com/photos/2065820/pexels-photo-2065820.jpeg'/>
+			<img id="subscribe-2" alt='subImage' src='https://images.pexels.com/photos/2065820/pexels-photo-2065820.jpeg'/>
+			<img id="subscribe-3" alt='subImage' src='https://images.pexels.com/photos/2065820/pexels-photo-2065820.jpeg'/>
+			<img id="subscribe-4" alt='subImage' src='https://images.pexels.com/photos/2065820/pexels-photo-2065820.jpeg'/>
+			<img id="subscribe-5" alt='subImage' src='https://images.pexels.com/photos/2065820/pexels-photo-2065820.jpeg'/>
 		</div>
 	)
 }

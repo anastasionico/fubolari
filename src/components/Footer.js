@@ -4,7 +4,7 @@ const Footer = () => {
 	return (
 		<div id='footer'>
 			<div id='footer-left'>
-				<img src='https://images.pexels.com/photos/2065820/pexels-photo-2065820.jpeg'/>
+				<img alt='logo' src='https://images.pexels.com/photos/2065820/pexels-photo-2065820.jpeg'/>
 				<h3>About Us</h3>
 				<ul>
 					<li>How are why</li>
