@@ -4,11 +4,27 @@ class Featured extends Component {
 	constructor () {
 		super()
 		this.featuredDiv = React.createRef()
+		this.focusNews = this.focusNews.bind(this)
 	}
+
+	focusNews = status => {
+		if (status) {
+			this.featuredDiv.current.classList.add('focused')
+		} else {
+			this.featuredDiv.current.classList.remove('focused')
+		}
+	}
+
 
 	render () {
 		return (
-			<div className='news-featured'>
+			<div
+				className='news-featured'
+				ref={this.featuredDiv} 
+				onMouseOver={this.focusNews.bind(this,1)}
+				onMouseOut={this.focusNews.bind(this,0)}
+			>
+
 				<div className='news-featured-header'>
 					<h1>Reaching out to 240 vulnerable ...</h1>
 					<h3>Reaching out to 240 vulnerable Londoners through the Young Londoners Fund</h3>
