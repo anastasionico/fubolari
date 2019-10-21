@@ -1,24 +1,45 @@
-import React from 'react';
+import React, {Component} from 'react';
 
-const Subscribe = () => {
-	return (
-		<div id='subscribe'>
-			<div>
+
+class Subscribe extends Component{
+	constructor (){
+		super()
+		this.subscribeDiv = React.createRef();
+	}
+
+	
+	userSubscribed = (e) => {
+		e.preventDefault();
+	 	
+	 	
+	 	const subscribeDiv = this.subscribeDiv.current;
+	 	subscribeDiv.classList.add('inProcess');
+
+	 	setTimeout(function() {
+	 		subscribeDiv.classList.add('processed');
+	 		subscribeDiv.firstChild.innerHTML = 'You are subscribed!';
+	 		
+	 	}, 900);
+	 	
+	 	
+	}
+
+	render () {
+		return (
+			<div id='subscribe' ref={this.subscribeDiv}>
+			
 				<h1>Subscribe</h1>
 				<hr/>
-				<p>Be the first to get all the informarmation</p>
-				<form>
-					<input type="email" placeholder="yourname@you.com"/>
+				<p>Be the first to get all the information</p>
+
+				<form onSubmit={this.userSubscribed}>
+					<input type="email" placeholder="yourname@you.com" id='subscribeInput'/>
 				</form>
-			</div>
 			
-			<img id="subscribe-1" alt='subImage' src='https://images.pexels.com/photos/2065820/pexels-photo-2065820.jpeg'/>
-			<img id="subscribe-2" alt='subImage' src='https://images.pexels.com/photos/2065820/pexels-photo-2065820.jpeg'/>
-			<img id="subscribe-3" alt='subImage' src='https://images.pexels.com/photos/2065820/pexels-photo-2065820.jpeg'/>
-			<img id="subscribe-4" alt='subImage' src='https://images.pexels.com/photos/2065820/pexels-photo-2065820.jpeg'/>
-			<img id="subscribe-5" alt='subImage' src='https://images.pexels.com/photos/2065820/pexels-photo-2065820.jpeg'/>
-		</div>
-	)
+			</div>
+		)	
+	}
+	
 }
 
 export default Subscribe

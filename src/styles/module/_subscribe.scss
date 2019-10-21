@@ -9,73 +9,37 @@
 	h1 {
 		font-size: 4rem;
 	}
+
 	hr {
 		width: 50%;
 		background:$white;
 	}
+	
 	p {
 		font-size: 1rem;
 	}
 	
-	img {
-		@include circle(50%);
-		position:absolute;
-	}
-
-	input {
-		outline: none;
-		color : $violet;
-		@include circle(50px);
-		border:0;
-		padding:0.5rem 1rem;
-		margin-top: 1.5rem;
-
-		@include media(tabletPortrait){
-			width: 42%;
-		}		
-		@include media(desktop){
-			padding:0.7rem 3rem;
-			width: 45%;
-		}		
-		
-		&::placeholder {
+	form {
+		input {
+			outline: none;
 			color : $violet;
-		}
-	}
+			@include circle(50px);
+			border:0;
+			padding:0.5rem 1rem;
+			margin-top: 1.5rem;
 
-	#subscribe-1 {
-		display: none;
-		top:-3rem;
-		left:1rem;
-		width: 200px;
-		height: auto;
-	}
-	#subscribe-2 {
-		display: none;
-		top:2rem;
-		right:15rem;
-		width: 100px;
-		height: auto;
-	}
-	#subscribe-3 {
-		display: none;
-		bottom:1rem;
-		right:1rem;
-		width: 150px;
-		height: auto;
-	}
-	#subscribe-4 {
-		display: none;
-		top:8rem;
-		left:15rem;
-		width: 50px;
-		height: auto;
-	}
-	#subscribe-5 {
-		display: none;
-		bottom:-5rem;
-		left:50%;
-		width: 150px;
-		height: auto;
+
+			@include media(tabletPortrait){
+				width: 42%;
+			}		
+			@include media(desktop){
+				padding:0.7rem 3rem;
+				width: 45%;
+			}		
+			
+			&::placeholder {
+				color : $violet;
+			}
+		}	
 	}
 }

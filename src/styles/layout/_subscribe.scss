@@ -3,4 +3,52 @@
 	background: linear-gradient(155deg, $violet, $red);
 	color: $white;
 	display: block;
+
+
+	&.inProcess {
+		animation: bounceIn 0.6s linear infinite;
+		animation-iteration-count:3;
+	}
+
+	@keyframes bounceIn {
+  		0% {
+    		background: linear-gradient(90deg, $violet 0%, $red 0%, $violet 30%);
+    	}
+    	10% {
+    		background: linear-gradient(90deg, $violet 6%, $red 21%, $violet 38%);
+    	}
+    	20% {
+    		background: linear-gradient(90deg, $violet 12%, $red 27%, $violet 42%);
+    	}
+    	30% {
+    		background: linear-gradient(90deg, $violet 18%, $red 33%, $violet 48%);
+    	}
+    	40% {
+    		background: linear-gradient(90deg, $violet 24%, $red 39%, $violet 54%);
+    	}
+    	50% {
+    		background: linear-gradient(90deg, $violet 30%, $red 45%, $violet 60%);
+    	}
+    	60% {
+    		background: linear-gradient(90deg, $violet 36%, $red 51%, $violet 66%);
+    	}
+    	70% {
+    		background: linear-gradient(90deg, $violet 42%, $red 57%, $violet 72%);
+    	}
+    	80% {
+    		background: linear-gradient(90deg, $violet 58%, $red 73%, $violet 88%);
+    	}
+    	90% {
+    		background: linear-gradient(90deg, $violet 64%, $red 79%, $violet 94%);
+    	}
+    	100% {
+    		background: linear-gradient(90deg, $violet 70%, $red 100%, $violet 100%);
+    	}
+    }
+
+    &.processed {
+    	background: $red;
+		// color: $white;
+ 	}
+
 }
