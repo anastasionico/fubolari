@@ -35,6 +35,24 @@
 			@include circle(50px);
 			background:$white;
 			color: $violet;
+		
+			&:hover {
+				cursor:pointer;
+				padding: 1rem 3rem;
+ 				background:$red;
+ 				transition:all 0.3s linear;
+ 			
+ 				.lni-arrow-right-circle::before {
+ 					color:$white;
+					display: inline-block;	
+  					-webkit-transform: rotate(90deg) scale(1.3);
+					-moz-transform: rotate(90deg) scale(1.3);
+					-o-transform: rotate(90deg) scale(1.3);
+					-ms-transform: rotate(90deg) scale(1.3);
+					transform: rotate(90deg) scale(1.3);
+					transition:all 0.3s linear;
+ 				}
+			}
 		}
 	}
 }
