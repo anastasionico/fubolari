@@ -5,19 +5,19 @@ import CourseCard from './CourseCard';
 const coursesList = [
 	[
 		'Computer Science',
-		'a',
+		'https://miro.medium.com/max/1600/1*QBxc5-QaDrLZV9VPHcqG0Q.png',
 	],
 	[
 		'History',
-		'a',
+		'https://payload.cargocollective.com/1/7/231915/13630156/venema4_800.jpg',
 	],
 	[
 		'Advertising',
-		'a',
+		'https://previews.123rf.com/images/macrovector/macrovector1805/macrovector180500946/101912265-advertising-agency-concept-with-creative-advertising-work-symbols-isometric-vector-illustration.jpg',
 	],
 	[
 		'Communication',
-		'a',
+		'https://cdn.theatlantic.com/assets/media/img/mt/2015/01/shutterstock_208347706-1/lead_720_405.jpg',
 	]
 ];
 
@@ -28,9 +28,7 @@ const Courses = () => {
 		<div id='courses'>
 			<div className='course-panel'>
 				{coursesList.map((courseList) => {
-					console.log(courseList)
 					return <CourseCard name={courseList[0]} image={courseList[1]}/>	
-
 				})}
 
 				
